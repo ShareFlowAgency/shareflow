@@ -21,6 +21,7 @@
                 <a href="#faq" class="nav-link">F.A.Q</a>
                 <a href="https://calendly.com/shareflow-agency/15min" target="_blank" class="btn-link">Prendre contact</a>
             </nav>
+            <button class="burger" aria-label="Menu"> ☰ </button>
             </div>
         </div>
     </header>
@@ -370,7 +371,15 @@
     </div>
 </footer>
 <script src="faq.js"></script>
+
+<script>
+  const burger = document.querySelector('.burger');
+  const nav = document.querySelector('.header-nav');
+
+  burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
+
 </body>
 </html>
-
-
