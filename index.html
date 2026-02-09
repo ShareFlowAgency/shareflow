@@ -375,11 +375,19 @@
 <script>
   const burger = document.querySelector('.burger');
   const nav = document.querySelector('.header-nav');
+  const links = document.querySelectorAll('.header-nav a');
 
   burger.addEventListener('click', () => {
     nav.classList.toggle('active');
+  });
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('active');
+    });
   });
 </script>
 
 </body>
 </html>
+
