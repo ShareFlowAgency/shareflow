@@ -1070,7 +1070,9 @@ body {
     }
 
     .hero h1 {
-        font-size: 48px;
+        font-size: 42px;
+        line-height: 1.1;
+        word-break: break-word;
     }
 
     .hero-tagline {
@@ -1140,4 +1142,69 @@ body {
     .cta-final p {
         font-size: 18px;
     }
+
 }
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2F4566;
+}
+/* ===== BURGER ===== */
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #2F4566;
+}
+
+/* ===== HEADER MOBILE ===== */
+@media (max-width: 768px) {
+
+  .container,
+  .container-large {
+    max-width: 100%;
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* afficher le burger */
+  .burger {
+    display: block;
+  }
+
+  /* cacher le menu horizontal */
+  .header-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+  }
+
+  /* menu ouvert */
+  .header-nav.active {
+    display: flex;
+  }
+
+  .logo img {
+    height: 48px;
+  }
+
+  .logo-text {
+    margin-left: 0;
+  }
+}
+
+
+
+
